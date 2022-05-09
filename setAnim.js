@@ -14,7 +14,7 @@ document.addEventListener("keydown", function(event) {
         }
         if(event.key == "Backspace" && key.textContent == "Backspace")
         {
-            this.properties.value = this.properties.value.slice(0, this.elements.textarea.selectionStart-1) + this.properties.value.slice(this.elements.textarea.selectionStart);
+            Keyboard.properties.value = Keyboard.properties.value.slice(0, Keyboard.elements.textarea.selectionStart-1) + Keyboard.properties.value.slice(Keyboard.elements.textarea.selectionStart);
             key.classList.add("active");
             setTimeout(function(){
                 key.classList.remove("active");
